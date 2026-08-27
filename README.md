@@ -169,6 +169,10 @@ Set all environment variables in your hosting provider’s secret/configuration 
 
 Before deployment, run `pnpm test`, `pnpm check`, and `pnpm build`. After deploying to a new domain, add the matching `/api/auth/google/callback` URL to the Google OAuth client’s authorized redirect URIs.
 
+### Vercel deployment
+
+The repository includes a Vercel serverless configuration: the React application builds to `dist/public`, while `api/[...path].ts` handles API and OAuth routes. See [`docs/vercel-deployment.md`](docs/vercel-deployment.md) before importing the repository into Vercel. Configure the required database, session, and Google OAuth secrets in Vercel before deployment, then add the production Vercel URL as an authorized Google callback URI.
+
 ## License
 
 This project is provided under the MIT License. Add a `LICENSE` file if you intend to distribute or open-source it.
