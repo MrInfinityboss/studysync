@@ -1,0 +1,25 @@
+# Project TODO
+
+- [x] Establish the navy, teal, and mint visual design system with responsive typography, navigation, and motion rules.
+- [x] Build a public landing page that explains StudySync and directs visitors to sign in or explore the product.
+- [x] Add database schema and migrations for user profiles, study sessions, tags, enrollments, waitlists, notifications, and audit events.
+- [x] Implement tRPC procedures and database helpers for session creation, editing, cancellation, discovery, details, enrollment, waitlists, dashboard summaries, and profile updates.
+- [x] Enforce transactional capacity allocation so a participant cannot join twice and a session cannot be overbooked.
+- [x] Build responsive authenticated routes for dashboard, discovery, session detail, create/edit session, my sessions, and profile.
+- [x] Connect every user-specific UI flow to Manus OAuth and database-backed tRPC queries and mutations.
+- [x] Provide clear loading, empty, success, and error states for every primary flow.
+- [x] Add host-visible waitlist participant states and a dedicated loading state for editing an existing session.
+- [x] Run flow-level verification for authenticated dashboard, discovery, session detail, create/edit, my sessions, and profile states.
+- [x] Write Vitest coverage for transactional enrollment rules and session validation.
+- [x] Run type checking, tests, and responsive visual verification for public and authenticated layouts.
+- [x] Save a completed project checkpoint and provide the project version for review.
+- [x] Add a Google OAuth client integration with secure authorization, callback, PKCE/state protection, and identity linking.
+- [x] Add a separate Continue with Google button and clear sign-in feedback to the public landing experience.
+- [x] Configure the Google OAuth client ID and client secret through secure project secrets.
+- [x] Add automated coverage for the Google OAuth state and identity-linking rules.
+- [x] Verify the configured Google sign-in flow, update the checkpoint, and provide Google Cloud setup instructions.
+- [x] Investigate and resolve the reported 403 error in the Google OAuth authorization or callback flow.
+- [x] Add explicit automated coverage for Google OAuth callback outcome validation and rerun end-to-end verification after the redirect URI update.
+- [x] Add route-level tests for Google OAuth callback cancellation and invalid-state responses.
+- [x] Capture and resolve the still-failing live Google sign-in error with a confirmed post-fix dashboard redirect; the likely cause was Google blocking OAuth navigation inside the embedded preview frame.
+- [x] Remove all user-visible Manus references from the StudySync interface and public-facing documentation while preserving sign-in functionality.
