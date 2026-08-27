@@ -176,3 +176,13 @@ The repository includes a Vercel serverless configuration: the React application
 ## License
 
 This project is provided under the MIT License. Add a `LICENSE` file if you intend to distribute or open-source it.
+
+## Week 2 frontend application development
+
+StudySync satisfies the Week 2 front-end deliverable through a responsive React and TypeScript interface connected to the application API. The public welcome view introduces the product and provides separate authentication choices. The authenticated dashboard summarizes upcoming joined sessions, hosted sessions, open recommendations, and recent activity. Discovery supports text search and filtering by subject, location, date, format, and available seats. Session detail provides contextual host, participant, enrollment, and waitlist actions. The session form supports creation and editing, while My Sessions and Profile provide additional connected views.
+
+The frontend is organized around reusable page and component boundaries. `StudyShell` provides shared authenticated navigation and responsive framing, `SessionCard` standardizes session presentation, and shadcn/ui primitives provide buttons, cards, badges, inputs, selects, dialogs, and feedback patterns. tRPC React hooks keep API calls typed from the server contract to the interface. Loading skeletons, empty states, actionable errors, success toasts, disabled mutation states, and confirmation prompts are included for core interactions.
+
+The visual process uses a navy, teal, mint, and gold academic palette, serif display headings, sans-serif utility text, soft borders, restrained shadows, and mobile-first spacing. The interface was reviewed at desktop and mobile sizes, and the project passed Vitest, TypeScript checking, and the production build before packaging.
+
+For Week 2 submission, include the source code and this README in one ZIP file. Exclude `.env` files, database passwords, OAuth secrets, `node_modules`, build output, and local logs. Run `pnpm install`, configure the required environment variables, run `pnpm drizzle-kit migrate`, and start the application with `pnpm dev`.
