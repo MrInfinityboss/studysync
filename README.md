@@ -186,3 +186,6 @@ The frontend is organized around reusable page and component boundaries. `StudyS
 The visual process uses a navy, teal, mint, and gold academic palette, serif display headings, sans-serif utility text, soft borders, restrained shadows, and mobile-first spacing. The interface was reviewed at desktop and mobile sizes, and the project passed Vitest, TypeScript checking, and the production build before packaging.
 
 For Week 2 submission, include the source code and this README in one ZIP file. Exclude `.env` files, database passwords, OAuth secrets, `node_modules`, build output, and local logs. Run `pnpm install`, configure the required environment variables, run `pnpm drizzle-kit migrate`, and start the application with `pnpm dev`.
+
+
+DeployPilot production webhook test.
